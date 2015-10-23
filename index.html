@@ -146,7 +146,7 @@
           node.append("text")
               .attr("dx", function(d) { return d.children ? 0 : 8; })
               .attr("dy", function(d) { return d.children ? 18 : 3; })
-              .text(function(d) { return d.name; })
+              .text(function(d) { return d.name + ': ' + d.count; })
               .attr("text-anchor", function(d){
                 return ( d.children ? "middle" : undefined );
               });
